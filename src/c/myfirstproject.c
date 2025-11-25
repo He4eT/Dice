@@ -73,6 +73,10 @@ static void prv_load_settings() {
 }
 
 static void prv_save_settings() {
+  if (settings.upper_bound < 1) {
+    settings.upper_bound = 1;
+  }
+
   persist_write_data(SETTINGS_KEY, &settings, sizeof(settings));
   current_number = settings.upper_bound;
 }
