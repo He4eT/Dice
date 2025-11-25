@@ -13,6 +13,14 @@
     "uuid": "17bac62e-38f7-49dd-8b50-d420290e9983",
     "displayName": "Dice",
     "sdkVersion": "3",
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "flint",
+      "emery"
+    ],
     "enableMultiJS": true,
     "projectType": "native",
     "watchapp": {
