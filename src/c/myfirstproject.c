@@ -25,7 +25,7 @@ static void prv_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  int text_h = 32 + 10;
+  const int text_h = 32 + 10;
   GRect text_bounds = GRect(0, (bounds.size.h - text_h) / 2, bounds.size.w, text_h);
   GFont text_font = fonts_get_system_font(FONT_KEY_LECO_32_BOLD_NUMBERS);
 
